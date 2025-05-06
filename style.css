@@ -1,0 +1,25 @@
+#title, #details, #cardBody {
+	text-align: center;
+}
+#buttons {
+	text-align: center;
+}
+#button {
+	color: #DBF4AD;
+}
+#image {
+	width: 100%;
+}
+#body {
+	background-color: #767522;
+	font-family: courier;
+}
+#main {
+	background-color: #A5AA52;
+	border-radius: 25px;
+	color: #DBF4AD;
+}
+#card {
+	border-radius: 25px;
+	color: #000000;
+}

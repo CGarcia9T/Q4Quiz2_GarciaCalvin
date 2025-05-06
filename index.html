@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz2_ScoreAnalyzer</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body id="body">
+	<script src="main.js"></script>
+	<div class="container mb-3 mt-3 p-5" id="main">
+		<h2 id="title">Score Analyzer</h2>
+		<br>
+		<details id="details">
+			<summary>Details</summary>
+			<p>Enter your grades in the following subjects. It will compute your total average score with the three grades you entered below.</p>
+		</details>
+		<div class="container mb-3 mt-3 p-5" id="subjects">
+			<div class="row">
+				<div class="col">
+					<div class="card" id="card">
+						<div class="card-body" id="cardBody">Mathematics</div>
+						<div class="container mt-3 mb-3">
+							<img src="https://i.ibb.co/pr0pRcns/math.png" id="image">
+						</div>
+						<div class="container mt-3 mb-3">
+							<label>Input your grade below:</label>
+							<input type="number" class="form-control" id="mathGrade">
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" id="card">
+						<div class="card-body" id="cardBody">History</div>
+						<div class="container mt-3 mb-3">
+							<img src="https://i.ibb.co/k26dFggQ/history.png" id="image">
+						</div>
+						<div class="container mt-3 mb-3">
+							<label>Input your grade below:</label>
+							<input type="number" class="form-control" id="socialGrade">
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" id="card">
+						<div class="card-body" id="cardBody">Science</div>
+						<div class="container mt-3 mb-3">
+							<img src="https://i.ibb.co/3bmJ4Hk/science.png" id="image">
+						</div>
+						<div class="container mt-3 mb-3">
+							<label>Input your grade below:</label>
+							<input type="number" class="form-control" id="scienceGrade">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="buttons">
+			<button type="button" class="btn" id="button" onclick="averageGrade()"><strong>Get the Average</strong></button>
+			<button type="button" class="btn" id="button" onclick="window.location.reload()"><strong>Refresh</strong></button>
+		</div>
+	</div>
+</body>
+</html>
